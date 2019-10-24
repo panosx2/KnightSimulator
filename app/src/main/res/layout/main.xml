@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center">
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose starting and ending position by touching the squares"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/solution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@id/tip"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="left|center"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:layout_below="@+id/tip"
+        android:layout_alignParentRight="true"
+        android:padding="20dp"
+        android:text="See all"/>
+
+    <TableLayout
+        android:id="@+id/chessboard"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/solution"
+        android:layout_centerHorizontal="true"
+        android:padding="1.5dp"
+        android:gravity="center"
+        android:background="@android:color/black"
+        android:layout_margin="20dp">
+
+        <TableRow android:id="@+id/row1" android:gravity="center">
+            <ImageView android:background="@drawable/square_light" android:tag="a1" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="b1" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="c1" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="d1" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="e1" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="f1" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="g1" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="h1" android:onClick="boardItemClicked"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/row2" android:gravity="center">
+            <ImageView android:background="@drawable/square_dark" android:tag="a2" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="b2" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="c2" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="d2" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="e2" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="f2" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="g2" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="h2" android:onClick="boardItemClicked"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/row3" android:gravity="center">
+            <ImageView android:background="@drawable/square_light" android:tag="a3" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="b3" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="c3" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="d3" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="e3" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="f3" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="g3" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="h3" android:onClick="boardItemClicked"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/row4" android:gravity="center">
+            <ImageView android:background="@drawable/square_dark" android:tag="a4" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="b4" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="c4" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="d4" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="e4" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="f4" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="g4" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="h4" android:onClick="boardItemClicked"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/row5" android:gravity="center">
+            <ImageView android:background="@drawable/square_light" android:tag="a5" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="b5" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="c5" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="d5" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="e5" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="f5" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="g5" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="h5" android:onClick="boardItemClicked"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/row6" android:gravity="center">
+            <ImageView android:background="@drawable/square_dark" android:tag="a6" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="b6" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="c6" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="d6" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="e6" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="f6" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="g6" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="h6" android:onClick="boardItemClicked"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/row7" android:gravity="center">
+            <ImageView android:background="@drawable/square_light" android:tag="a7" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="b7" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="c7" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="d7" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="e7" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="f7" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="g7" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="h7" android:onClick="boardItemClicked"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/row8" android:gravity="center">
+            <ImageView android:background="@drawable/square_dark" android:tag="a8" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="b8" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="c8" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="d8" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="e8" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="f8" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_dark" android:tag="g8" android:onClick="boardItemClicked"/>
+            <ImageView android:background="@drawable/square_light" android:tag="h8" android:onClick="boardItemClicked"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chessboard">
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/holo_green_dark"
+            android:text="Find Moves"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/reset"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
